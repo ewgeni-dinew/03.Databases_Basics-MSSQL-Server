@@ -1,0 +1,2 @@
+# 03.Databases_Basics-MSSQL-Server
+I will be submitting exersices from the third course, that I am currently undergoing at the Software University(SoftUni) in Sofia, from 18.09.17 untill 22.10.17. The concept of the course is for us to get to know one of the most widely used systems for database management DBMS. This is my first professional module at SoftUni, as I have chosen C# as my prefered language. I will be using Microsofts SQL Server Management Studio 17.2 for the upcomming tasks.
