@@ -31,11 +31,11 @@
           <AssociatedConnUserName />
           <FullPath>06.From_06_to_08.sql</FullPath>
         </FileNode>
-        <FileNode Name="06.From_09_to_13.sql">
+        <FileNode Name="06.From_09_to_12.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:DESKTOP-B6V15QN\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>DESKTOP-B6V15QN\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>06.From_09_to_13.sql</FullPath>
+          <FullPath>06.From_09_to_12.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

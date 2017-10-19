@@ -9,16 +9,25 @@ WHERE dbo.ufn_GetSalaryLevel(Salary)=@SALARYLEVEL
 GO
 
 --07.Define Function
-CREATE FUNCTION ufn_IsWordComprised(@setOfLetters VARCHAR(50),@word VARCHAR(50))
+CREATE FUNCTION ufn_IsWordComprised(@setOfLetters VARCHAR(max), @word VARCHAR(max))
 RETURNS BIT
+AS
 BEGIN
-	DECLARE @RESULT BIT
-		WHILE
-		BEGIN
-		END
-	RETURN @RESULT
+  DECLARE @isComprised BIT = 0;
+  DECLARE @currentIndex INT = 1;
+  DECLARE @currentChar CHAR;
+
+  WHILE(@currentIndex <= LEN(@word))
+  BEGIN
+
+    SET @currentChar = SUBSTRING(@word, @currentIndex, 1);
+    IF(CHARINDEX(@currentChar, @setOfLetters) = 0)
+      RETURN @isComprised;
+    SET @currentIndex += 1;
+
+  END
+  RETURN @isComprised + 1;
 END
-GO
 
 --08.Delete Employees and Departments
 CREATE PROCEDURE usp_DeleteEmployeesFromDepartment(@departmentId INT)
